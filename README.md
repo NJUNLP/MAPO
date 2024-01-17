@@ -11,16 +11,19 @@
 | **MAPO-DPO** (ours) |       41.1 |  57.3 |   [link](https://huggingface.co/kevinpro/MAPO-DPO-7B)   |
 |         MathOctopus        |           38.1            |       40.7 |
 |         MultiLingual-RFT        |          33.4            |       48.6 |
+|         MathOctopus        |           38.1            |       40.7 |
+|         MultiLingual-RFT        |          33.4            |       48.6 |
 |          ChatGPT Zero-shot |       46.2 |      40.8    | -  |
 
 
 ### :trophy: Alignment Performance
-![Alt text for image 1](/fig/Alignment.png){:height="50%" width="50%"} ![Alt text for image 2](/fig/ARC.png){:height="50%" width="50%"}
 
 <p float="left">
-  <img src="/fig/Alignment.png" alt="Alt text for image 1" width="300" />
-  <img src="/fig/ARC.png" alt="Alt text for image 2" width="300" />
+  <img src="/fig/Alignment.png" alt="Alt text for image 1" width="350" />
+  <img src="/fig/ARC.png" alt="Alt text for image 2" width="350" />
 </p>
+
+
 
 
 
