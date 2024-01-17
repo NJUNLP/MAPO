@@ -1,5 +1,25 @@
 # MAPO: Advancing Multilingual Reasoning through Multilingual Alignment-as-Preference Optimization
 
+## Overview
+
+Welcome to the repository of MAPO, our cutting-edge framework designed to revolutionize multilingual reasoning capabilities in large language models (LLMs). 
+
+* 🚀 We propose a framework that enhances the reasoning capabilities of other languages by aligning their reasoning processes with those of English. This is achieved by using off-the-shelf translation models to estimate the consistency of reasoning processes in other languages, and then optimizing this consistency as a preference using popular preference algorithms such as DPO or PPO.
+
+* 📈 By utilizing our framework, we can effectively improve the consistency of multilingual reasoning, thereby enhancing the multilingual reasoning capabilities of large models in a more generalizable manner. Our approach has achieved performance improvements on both in-domain and out-of-domain datasets, surpassing all baselines, including ChatGPT, and has reached state-of-the-art (SOTA) results.
+
+* 🌐 Overall, our method demonstrates a novel way of improving the multilingual reasoning abilities of models without the need for extensive annotation of reasoning processes in other languages, thus enabling a more generalizable enhancement of multilingual reasoning capabilities.
+
+
+
+
+
+
+
+
+
+
+
 *The code and models for this project will be released later this week.*
 
 ![](/fig/MAPO2.png)
@@ -45,7 +65,7 @@
 
 
 
-### :trophy: Alignment Performance
+## :trophy: Alignment Performance
 
 <p float="left">
   <img src="/fig/Alignment.png" alt="Alt text for image 1" width="350" />
@@ -56,7 +76,7 @@
 
 
 
-### :hammer_and_wrench: Training & Evaluation
+# :hammer_and_wrench: Training & Evaluation
 
 The code is on its way.
 
