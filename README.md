@@ -73,6 +73,8 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
   <img src="/fig/ARC.png" alt="Alt text for image 2" width="350" />
 </p>
 
+Significant improvements in the consistency of both the reasoning processes (left) and the reasoning answers (right) of LLM across various languages.
+
 
 
 
