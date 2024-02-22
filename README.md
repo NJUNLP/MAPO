@@ -38,6 +38,12 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
 # :trophy: Benchmarks
 
 ## Average Accuracy on Three Multilingual Reasoning Benchmarks
+
+Below is the average accuracy across ten languages on three multilingual mathematical reasoning datasets . Our method has significantly improved the multilingual reasoning capabilities of large models by a large margin, achieving the SOTA performance.
+
+
+We also hope that in the future, more multilingual reasoning LLMs can collaborate with our work to further enhance multilingual reasoning capabilities.
+
 <table>
     <thead>
         <tr>
@@ -56,21 +62,21 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
         </tr>
         <tr>
             <td><a href="https://huggingface.co/TIGER-Lab/MAmmoTH-7B">MAmmoTH 7B</a></td>
-            <td style="text-align: center;">46.6</td>
-            <td style="text-align: center;">42.2</td>
-            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">26.3</td>
+            <td style="text-align: center;">21.3</td>
+            <td style="text-align: center;">24.2</td>
         </tr>
         <tr>
             <td><a href="https://huggingface.co/WizardLM/WizardMath-7B-V1.1">WizardMath 7B</a></td>
-            <td style="text-align: center;">46.6</td>
-            <td style="text-align: center;">42.2</td>
-            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">32.5</td>
+            <td style="text-align: center;">23.0</td>
+            <td style="text-align: center;">28.7</td>
         </tr>
         <tr>
             <td><a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0">MetaMath 7B</a></td>
-            <td style="text-align: center;">46.6</td>
-            <td style="text-align: center;">42.2</td>
-            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">46.2</td>
+            <td style="text-align: center;">37.0</td>
+            <td style="text-align: center;">43.2</td>
         </tr>
         <!-- <tr>
            <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
