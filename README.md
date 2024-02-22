@@ -45,85 +45,74 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
             <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mSVAMP</a></th>
             <th><a href="https://huggingface.co/datasets/juletxara/mgsm">mGSM</a></th>
             <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mNumGLUESub</a></th>
-            <th>Download</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>ChatGPT Zero-shot</td>
+            <td>GPT-3.5-Turbo</td>
             <td style="text-align: center;">46.6</td>
             <td style="text-align: center;">42.2</td>
             <td style="text-align: center;">49.4</td>
-            <td style="text-align: center;">-</td>
         </tr>
         <tr>
-            <td>MAmmoTH 7B</td>
+            <td><a href="https://huggingface.co/TIGER-Lab/MAmmoTH-7B">MAmmoTH 7B</a></td>
             <td style="text-align: center;">46.6</td>
             <td style="text-align: center;">42.2</td>
             <td style="text-align: center;">49.4</td>
-            <td style="text-align: center;">-</td>
         </tr>
         <tr>
-            <td>WizardMath 7B</td>
+            <td><a href="https://huggingface.co/WizardLM/WizardMath-7B-V1.1">WizardMath 7B</a></td>
             <td style="text-align: center;">46.6</td>
             <td style="text-align: center;">42.2</td>
             <td style="text-align: center;">49.4</td>
-            <td style="text-align: center;">-</td>
         </tr>
         <tr>
-            <td>MetaMath 7B</td>
+            <td><a href="https://huggingface.co/meta-math/MetaMath-7B-V1.0">MetaMath 7B</a></td>
             <td style="text-align: center;">46.6</td>
             <td style="text-align: center;">42.2</td>
             <td style="text-align: center;">49.4</td>
-            <td style="text-align: center;">-</td>
         </tr>
         <!-- <tr>
            <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
         </tr> -->
         <tr>
-            <td>MathOctopus 7B</td>
+            <td><a href="https://huggingface.co/Mathoctopus/Parallel_7B">MathOctopus</a></td>
             <td style="text-align: center;">41.2</td>
             <td style="text-align: center;">39.5</td>
             <td style="text-align: center;">37.1</td>
-            <td style="text-align: center;"><a href="https://huggingface.co/Mathoctopus/Parallel_7B">link</a></td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>+ m-RFT</td>
             <td style="text-align: center;">48.7</td>
             <td style="text-align: center;">34.4</td>
             <td style="text-align: center;">45.4</td>
-            <td style="text-align: center;">-</td>
-        </tr>
+        </tr> -->
         <tr>
-            <td><strong>+ MAPO-DPO(ours)</strong></td>
+            <td><strong><a href="https://huggingface.co/kevinpro/MathOctopus-MAPO-DPO-7B">+ MAPO-DPO(ours)</a></strong></td>
             <td style="text-align: center;"><strong>57.4</strong></td>
             <td style="text-align: center;"><strong>41.6</strong></td>
             <td style="text-align: center;"><strong>50.4</strong></td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MathOctopus-MAPO-DPO-7B">link</a></td>
         </tr> 
         <!-- <tr>
            <td colspan="5" style="text-align: center;">MetaMathOctopus 7B</td>
         </tr> -->
         <tr>
-            <td>MetaMathOctopus 7B</td>
+            <td><a href="https://huggingface.co/kevinpro/MetaMathOctopus-7B">MetaMathOctopus 7B</a></td>
             <td style="text-align: center;">53.0</td>
             <td style="text-align: center;">45.5</td>
             <td style="text-align: center;">39.2</td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MetaMathOctopus-7B">link</a></td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>+ m-RFT</td>
             <td style="text-align: center;">56.7</td>
             <td style="text-align: center;">41.4</td>
             <td style="text-align: center;">51.7</td>
-            <td style="text-align: center;">-</td>
-        </tr>
+        </tr> -->
         <tr>
-            <td><strong>+ MAPO-DPO(ours)</strong></td>
+           <td><strong><a href="https://huggingface.co/kevinpro/MetaMathOctopus-MAPO-DPO-7B">+ MAPO-DPO(ours) 👑 </a></strong></td>
             <td style="text-align: center;"><strong>64.7</strong></td>
             <td style="text-align: center;"><strong>51.6</strong></td>
             <td style="text-align: center;"><strong>52.9</strong></td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MetaMathOctopus-MAPO-DPO-7B">link</a></td>
         </tr>
     </tbody>
 </table>
