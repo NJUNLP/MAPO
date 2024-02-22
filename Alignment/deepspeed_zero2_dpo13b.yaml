@@ -1,0 +1,13 @@
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+  deepspeed_config_file: ds_config_zero2.json
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+machine_rank: 0
+num_machines: 1
+num_processes: auto
+rdzv_backend: static
+tpu_env: []
+tpu_use_cluster: false
+tpu_use_sudo: false
+use_cpu: false

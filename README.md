@@ -24,44 +24,147 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
 
 
 
-![](/fig/MAPO2.png)
+![](/fig/Alignv2.png)
+
+
+
+
+
 
 # :trophy: Benchmarks
-|        System          | [mSVAMP](https://huggingface.co/datasets/Mathoctopus/MSVAMP)| [mGSM](https://huggingface.co/datasets/juletxara/mgsm) |  [mNumGLUESub](https://huggingface.co/datasets/Mathoctopus/MSVAMP) | Download |
-|:--------------------------:|:----:|:----:|:------:|:--------:|
-| **MAPO-DPO(ours)** |        **58.4**    |      **41.1**                 | **49.8** |   [link](https://huggingface.co/kevinpro/MAPO-DPO-7B)   |
-| MathOctopus |        40.7    |      38.1                 | 36.0 |   [link](https://huggingface.co/Mathoctopus/Parallel_7B)   |
-| MultiLingual-RFT |        48.6    |      33.4                 | 44.8 |   [link](https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline)   |
-| ChatGPT Zero-shot |        45.4    |      40.8                 | 40.7 |   -   |
+
+## Average Accuracy on Three Multilingual Reasoning Benchmarks
+<table>
+    <thead>
+        <tr>
+            <th>System</th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mSVAMP</a></th>
+            <th><a href="https://huggingface.co/datasets/juletxara/mgsm">mGSM</a></th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mNumGLUESub</a></th>
+            <th>Download</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ChatGPT Zero-shot</td>
+            <td style="text-align: center;">46.6</td>
+            <td style="text-align: center;">42.2</td>
+            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>MAmmoTH 7B</td>
+            <td style="text-align: center;">46.6</td>
+            <td style="text-align: center;">42.2</td>
+            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>WizardMath 7B</td>
+            <td style="text-align: center;">46.6</td>
+            <td style="text-align: center;">42.2</td>
+            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+            <td>MetaMath 7B</td>
+            <td style="text-align: center;">46.6</td>
+            <td style="text-align: center;">42.2</td>
+            <td style="text-align: center;">49.4</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
+           <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
+        </tr>
+        <tr>
+            <td>MathOctopus 7B</td>
+            <td style="text-align: center;">41.2</td>
+            <td style="text-align: center;">39.5</td>
+            <td style="text-align: center;">37.1</td>
+            <td style="text-align: center;"><a href="https://huggingface.co/Mathoctopus/Parallel_7B">link</a></td>
+        </tr>
+        <tr>
+            <td>+ m-RFT</td>
+            <td style="text-align: center;">48.7</td>
+            <td style="text-align: center;">34.4</td>
+            <td style="text-align: center;">45.4</td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline">link</a></td>
+        </tr>
+        <tr>
+            <td><strong>+ MAPO-DPO(ours)</strong></td>
+            <td style="text-align: center;"><strong>57.4</strong></td>
+            <td style="text-align: center;"><strong>41.6</strong></td>
+            <td style="text-align: center;"><strong>50.4</strong></td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-DPO-7B">link</a></td>
+        </tr> 
+        <tr>
+           <td colspan="5" style="text-align: center;">MetaMathOctopus 7B</td>
+        </tr>
+        <tr>
+            <td>MetaMathOctopus 7B</td>
+            <td style="text-align: center;">53.0</td>
+            <td style="text-align: center;">45.5</td>
+            <td style="text-align: center;">39.2</td>
+            <td style="text-align: center;"><a href="https://huggingface.co/Mathoctopus/Parallel_7B">link</a></td>
+        </tr>
+        <tr>
+            <td>+ m-RFT</td>
+            <td style="text-align: center;">56.7</td>
+            <td style="text-align: center;">41.4</td>
+            <td style="text-align: center;">51.7</td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline">link</a></td>
+        </tr>
+        <tr>
+            <td><strong>+ MAPO-DPO(ours)</strong></td>
+            <td style="text-align: center;"><strong>64.7</strong></td>
+            <td style="text-align: center;"><strong>51.6</strong></td>
+            <td style="text-align: center;"><strong>52.9</strong></td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-DPO-7B">link</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- |        System          | [mSVAMP](https://huggingface.co/datasets/Mathoctopus/MSVAMP)| [mGSM](https://huggingface.co/datasets/juletxara/mgsm) |  [mNumGLUESub](https://huggingface.co/datasets/Mathoctopus/MSVAMP) | Download |
+|--------------------------|:----:|:----:|:------:|:--------:|
+| ChatGPT Zero-shot |        46.6    |      42.2                 | 49.4 |   -   |
+| MathOctopus 7B |        41.2    |      39.5                 | 37.1 |   [link](https://huggingface.co/Mathoctopus/Parallel_7B)   |
+| + MultiLingual-RFT |        48.7    |      34.4                 | 45.4 |   [link](https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline)   |
+| **+ MAPO-DPO(ours)** |        **57.4**    |      **41.6**                 | **50.4** |   [link](https://huggingface.co/kevinpro/MAPO-DPO-7B)   |
+|-------|-------|-------|
+| MetaMathOctopus 7B |         53.0    |      45.5                 | 39.2 |   [link](https://huggingface.co/Mathoctopus/Parallel_7B)   |
+| + MultiLingual-RFT |        56.7    |      41.4                 | 51.7 |   [link](https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline)   |
+| **+ MAPO-DPO(ours)** |        **64.7**    |      **51.6**                 | **52.9** |   [link](https://huggingface.co/kevinpro/MAPO-DPO-7B)   | -->
 
 
 
-## Overall Result on Out-Domain Benchmark: [mSVAMP](https://huggingface.co/datasets/Mathoctopus/MSVAMP) 
 
-|  Model                        | Bn      | Th      | Sw      | Ja      | Zh      | Ru      | De      | Es      | Fr      | Avg.      | En |
+
+<!-- ## Overall Result on Out-Domain Benchmark: [mSVAMP](https://huggingface.co/datasets/Mathoctopus/MSVAMP)  -->
+
+<!-- |  Model                        | Bn      | Th      | Sw      | Ja      | Zh      | Ru      | De      | Es      | Fr      | Avg.      | En |
 |:--------------------------------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|
 | **MAPO-DPO(ours)**         |  **48.8**  |   **55.2**  |   **56.0**  |   **60.3**  |   **58.8**  |   **58.3**  |  **58.1**  |   **59.7**  |   **60.8**  |   **57.3**  |  **58.4** | 
 | MathOctopus|  27.7  | 35.9  | 39.4  | 41.6  | 42.7  | 44.2  | 44.0  | 45.1  | 45.3  | 40.7  | 46.4   |
 | MultiLingual-RFT    | 37.9  | 46.4  | 46.4  | 49.6  | 50.8  | 50.4  | 50.7  | 51.6  | 53.4  | 48.6  | 49.4    |
-|  ChatGPT Zero-shot         | 29.9  | 40.8  | 44.3  | 44.0  | 47.9  | 48.4  | 51.2  | 52.4  | 50.1  | 45.4  | 53.8   |
+|  ChatGPT Zero-shot         | 29.9  | 40.8  | 44.3  | 44.0  | 47.9  | 48.4  | 51.2  | 52.4  | 50.1  | 45.4  | 53.8   | -->
 
-## Overall Result on In-Domain Benchmark: [mMGSM](https://huggingface.co/datasets/Mathoctopus/MSVAMP) 
+<!-- ## Overall Result on In-Domain Benchmark: [mMGSM](https://huggingface.co/datasets/Mathoctopus/MSVAMP)  -->
 
-|  Model                        | Bn      | Th      | Sw      | Ja      | Zh      | Ru      | De      | Es      | Fr      | Avg.      | En |
+<!-- |  Model                        | Bn      | Th      | Sw      | Ja      | Zh      | Ru      | De      | Es      | Fr      | Avg.      | En |
 |:--------------------------------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|
 | **MAPO-DPO(ours)**         |  **30.8**  | **38.0**  | **37.6**  | **45.2**  | **47.2**  | **42.0**  | **45.2**  | **43.2**  | **40.8**  | **41.1**  | 45.6 | 
 | MathOctopus|  29.2 | 33.6 | 36.4 | 35.2 | 39.2 | 38.8 | 44.8 | 42.4 | 43. | 38.1 | **52.0**   |
 | MultiLingual-RFT    | 25.6 | 31.2 | 28.8 | 34.0 | 39.2 | 36.0 | 34.8 | 34.4 | 36.4 | 33.4 | 43.2    |
-|  ChatGPT Zero-shot         | 31.2  | 38.0  | 40.0  | 36.0  | 44.0  | 43.2  | 46.0  | 47.2  | 41.6  | 40.8  | 54.4
+|  ChatGPT Zero-shot         | 31.2  | 38.0  | 40.0  | 36.0  | 44.0  | 43.2  | 46.0  | 47.2  | 41.6  | 40.8  | 54.4 -->
 
-## Overall Result on In-Domain Benchmark: [mNumGLUESub](https://huggingface.co/datasets/Mathoctopus/MSVAMP) 
+<!-- ## Overall Result on In-Domain Benchmark: [mNumGLUESub](https://huggingface.co/datasets/Mathoctopus/MSVAMP)  -->
 
-|  Model                        | Bn      | Th      | Sw      | Ja      | Zh      | Ru      | De      | Es      | Fr      | Avg.      | En |
+<!-- |  Model                        | Bn      | Th      | Sw      | Ja      | Zh      | Ru      | De      | Es      | Fr      | Avg.      | En |
 |:--------------------------------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|
 | **MAPO-DPO(ours)**         | **41.8** | **45.8** | **46.9** | **52.9** | **54.4** | **49.9** | **50.7** | **54.0** | **51.4** | **49.8** | **55.9** | 
 | MathOctopus|   26.6 | 30.9 | 34.3 | 40.9 | 44.4 | 36.0 | 32.6 | 42.0 | 36.2 | 36.0 | 46.9 |
 | MultiLingual-RFT    | 38.0 | 42.9 | 41.8 | 48.2 | 51.6 | 45.2 | 42.9 | 49.3 | 42.9 | 44.8 | 51.2    |
-|  ChatGPT Zero-shot         | 36.2 | 42.6 | 47.2 | 58.1 | 60.6 | 42.6 | 41.5 | 54.9 | 39.4 | 47.0 | 70.6 |
+|  ChatGPT Zero-shot         | 36.2 | 42.6 | 47.2 | 58.1 | 60.6 | 42.6 | 41.5 | 54.9 | 39.4 | 47.0 | 70.6 | -->
 
 
 

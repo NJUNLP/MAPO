@@ -1,0 +1,17 @@
+compute_environment: LOCAL_MACHINE
+deepspeed_config:
+  gradient_clipping: 1.0
+  offload_optimizer_device: cpu  # Offload optimizer to CPU
+  offload_param_device: none     # Keep parameters on GPU
+  zero_stage: 2                  # Enable ZeRO-2 optimization
+distributed_type: DEEPSPEED
+downcast_bf16: 'no'
+dynamo_backend: 'NO'
+main_training_function: main
+megatron_lm_config: {}
+mixed_precision: 'bf16'
+num_machines: 1
+num_processes: 4
+rdzv_backend: static
+same_network: true
+use_cpu: false
