@@ -1,5 +1,9 @@
 # MAPO: Advancing Multilingual Reasoning through Multilingual Alignment-as-Preference Optimization
-
+<p align="center">
+  <a href="https://arxiv.org/abs/2401.06838"> 📃 Paper</a> | 
+  <a href="https://huggingface.co/kevinpro"> 🤗 Huggingface</a> | 
+  <a href="https://ricardokevins.github.io/"> 📭 Contact</a> 
+</p>
 
 ## Overview
 
@@ -88,14 +92,14 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
             <td style="text-align: center;">48.7</td>
             <td style="text-align: center;">34.4</td>
             <td style="text-align: center;">45.4</td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline">link</a></td>
+            <td style="text-align: center;">-</td>
         </tr>
         <tr>
             <td><strong>+ MAPO-DPO(ours)</strong></td>
             <td style="text-align: center;"><strong>57.4</strong></td>
             <td style="text-align: center;"><strong>41.6</strong></td>
             <td style="text-align: center;"><strong>50.4</strong></td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-DPO-7B">link</a></td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MathOctopus-MAPO-DPO-7B">link</a></td>
         </tr> 
         <!-- <tr>
            <td colspan="5" style="text-align: center;">MetaMathOctopus 7B</td>
@@ -105,21 +109,21 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
             <td style="text-align: center;">53.0</td>
             <td style="text-align: center;">45.5</td>
             <td style="text-align: center;">39.2</td>
-            <td style="text-align: center;"><a href="https://huggingface.co/Mathoctopus/Parallel_7B">link</a></td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MetaMathOctopus-7B">link</a></td>
         </tr>
         <tr>
             <td>+ m-RFT</td>
             <td style="text-align: center;">56.7</td>
             <td style="text-align: center;">41.4</td>
             <td style="text-align: center;">51.7</td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-MultiLingual-RFT-Baseline">link</a></td>
+            <td style="text-align: center;">-</td>
         </tr>
         <tr>
             <td><strong>+ MAPO-DPO(ours)</strong></td>
             <td style="text-align: center;"><strong>64.7</strong></td>
             <td style="text-align: center;"><strong>51.6</strong></td>
             <td style="text-align: center;"><strong>52.9</strong></td>
-            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-DPO-7B">link</a></td>
+            <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MetaMathOctopus-MAPO-DPO-7B">link</a></td>
         </tr>
     </tbody>
 </table>
@@ -185,7 +189,13 @@ Significant improvements in the consistency of both the reasoning processes (lef
 
 # :hammer_and_wrench: Training & Evaluation
 
-The code is on its way.
+- Training: 
+  - DPO: bash dpo.sh/dpo13b.sh yourconfig.json
+  - PPO: bash ppo_lora.sh yourconfig.json
+
+- Evaluation: bash run.sh
+
+For more details about training/evaluating, please navigate to the Alignment/Evaluation directory.
 
 ### Citation
 If you find this repository helpful, feel free to cite our paper:
