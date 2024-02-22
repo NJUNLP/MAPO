@@ -20,7 +20,7 @@ if 'checkpoint' in model_path:
 else:
     model_name = model_path.split("/")[-1]
 
-target_dir = "{model}-{split}".format(model = model_name,split = data_path.split("/")[-1])
+target_dir = "./Generations/{model}-{split}".format(model = model_name,split = data_path.split("/")[-1])
 
 f = open(data_file,'r')
 data = json.load(f)

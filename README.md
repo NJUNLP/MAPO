@@ -73,9 +73,9 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
             <td style="text-align: center;">49.4</td>
             <td style="text-align: center;">-</td>
         </tr>
-        <tr>
+        <!-- <tr>
            <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
-        </tr>
+        </tr> -->
         <tr>
             <td>MathOctopus 7B</td>
             <td style="text-align: center;">41.2</td>
@@ -97,9 +97,9 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
             <td style="text-align: center;"><strong>50.4</strong></td>
             <td style="text-align: center;"><a href="https://huggingface.co/kevinpro/MAPO-DPO-7B">link</a></td>
         </tr> 
-        <tr>
+        <!-- <tr>
            <td colspan="5" style="text-align: center;">MetaMathOctopus 7B</td>
-        </tr>
+        </tr> -->
         <tr>
             <td>MetaMathOctopus 7B</td>
             <td style="text-align: center;">53.0</td>
