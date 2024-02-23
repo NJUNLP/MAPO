@@ -1,0 +1,1 @@
+python3 vllm_sampling.py --model_path /mnt/data/shesj/PLM/Parallel_7B --testset /mnt/data/shesj/Data/Multi_TestSet/mMTBench.json --iter 20 --temp 0.8 --suffix Parallel_7B_gen_0.8_20

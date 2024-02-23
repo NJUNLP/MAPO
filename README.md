@@ -183,6 +183,10 @@ Significant improvements in the consistency of both the reasoning processes (lef
 
 
 # :hammer_and_wrench: Training & Evaluation
+- Preference optimization data preparation
+  - Generation: bash sampling.sh
+  - Preference estimation: bash PreferenceEstimate.sh
+  - Format paired data: python3 extract_dpo_data.py
 
 - Training: 
   - DPO: bash dpo.sh/dpo13b.sh yourconfig.json
@@ -192,7 +196,7 @@ Significant improvements in the consistency of both the reasoning processes (lef
 
 For more details about training/evaluating, please navigate to the Alignment/Evaluation directory.
 
-### Citation
+# Citation
 If you find this repository helpful, feel free to cite our paper:
 ```
 @misc{she2024mapo,
