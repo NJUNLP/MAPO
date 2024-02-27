@@ -272,21 +272,4 @@ if __name__ == "__main__":
         callbacks=[SavePeftModelCallback]
     )
 
-    # dpo_trainer = DPOTrainer(
-    #     model,
-    #     model_ref,
-    #     args=training_args,
-    #     beta=script_args.beta,
-    #     train_dataset=train_dataset,
-    #     eval_dataset=eval_dataset,
-    #     tokenizer=tokenizer,
-    #     max_length=script_args.max_length,
-    #     #max_target_length=script_args.max_target_length,
-    #     max_prompt_length=script_args.max_prompt_length,
-    #     deepspeed="/mnt/data/sheshuaijie/Code/RL4CoT/PPO/deepspeed_zero2.json",
-    #     #deepspeed="ds_config_zero2.json"
-    #     #deepspeed_config="/mnt/data/sheshuaijie/Code/RL4CoT/PPO/deepspeed_config.json",
-    # )
-
-    # 6. train
     dpo_trainer.train()

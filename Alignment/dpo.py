@@ -27,6 +27,8 @@ import os
 from transformers.trainer_utils import PREFIX_CHECKPOINT_DIR
 from datasets import load_dataset, concatenate_datasets, DatasetDict
 
+# SET here
+Log_dir = "/mnt/data/shesj/Log/DPO/"
 class SavePeftModelCallback(TrainerCallback):
     def on_save(
         self,
@@ -203,8 +205,6 @@ if __name__ == "__main__":
     # )
 
     # 4. initialize training arguments:
-
-
     training_args = TrainingArguments(
         per_device_train_batch_size=script_args.per_device_train_batch_size,
         per_device_eval_batch_size=script_args.per_device_eval_batch_size,
@@ -220,7 +220,7 @@ if __name__ == "__main__":
         report_to=script_args.report_to,
         save_total_limit=3,
         load_best_model_at_end=True,
-        logging_dir="/mnt/data/shesj/Log/DPO/" + script_args.output_dir.split('/')[-1] + '/logs',
+        logging_dir=Log_dir + script_args.output_dir.split('/')[-1] + '/logs',
         lr_scheduler_type=script_args.lr_scheduler_type,
         warmup_steps=script_args.warmup_steps,
         optim=script_args.optimizer_type,
@@ -246,21 +246,5 @@ if __name__ == "__main__":
         callbacks=[SavePeftModelCallback]
     )
 
-    # dpo_trainer = DPOTrainer(
-    #     model,
-    #     model_ref,
-    #     args=training_args,
-    #     beta=script_args.beta,
-    #     train_dataset=train_dataset,
-    #     eval_dataset=eval_dataset,
-    #     tokenizer=tokenizer,
-    #     max_length=script_args.max_length,
-    #     #max_target_length=script_args.max_target_length,
-    #     max_prompt_length=script_args.max_prompt_length,
-    #     deepspeed="/mnt/data/sheshuaijie/Code/RL4CoT/PPO/deepspeed_zero2.json",
-    #     #deepspeed="ds_config_zero2.json"
-    #     #deepspeed_config="/mnt/data/sheshuaijie/Code/RL4CoT/PPO/deepspeed_config.json",
-    # )
 
-    # 6. train
     dpo_trainer.train()
