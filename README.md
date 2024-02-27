@@ -37,7 +37,7 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
 
 ## :trophy: Benchmarks
 
-Below is the average accuracy across ten languages on three multilingual mathematical reasoning datasets . Our method has significantly improved the multilingual reasoning capabilities of large models by a large margin, achieving the SOTA performance. We also hope that in the future, more multilingual reasoning LLMs can collaborate with our work to further enhance multilingual reasoning capabilities.
+Below is the average accuracy across ten languages on three multilingual mathematical reasoning datasets . Our method significantly improves the multilingual reasoning capabilities of LLMs by a large margin, achieving the SOTA performance. We also hope that in the future, more multilingual reasoning LLMs can collaborate with our work to further enhance multilingual reasoning capabilities.
 
 <table>
     <thead>
