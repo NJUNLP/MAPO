@@ -43,9 +43,9 @@ Below is the average accuracy across ten languages on three multilingual mathema
     <thead>
         <tr>
             <th>System</th>
-            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mSVAMP</a></th>
-            <th><a href="https://huggingface.co/datasets/juletxara/mgsm">mGSM</a></th>
-            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mNumGLUESub</a></th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">MSVAMP</a></th>
+            <th><a href="https://huggingface.co/datasets/juletxara/mgsm">MGSM</a></th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">MNumGLUESub</a></th>
         </tr>
     </thead>
     <tbody>
@@ -129,9 +129,9 @@ Below is the average accuracy across ten languages on three multilingual mathema
     <thead>
         <tr>
             <th>System</th>
-            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mSVAMP</a></th>
-            <th><a href="https://huggingface.co/datasets/juletxara/mgsm">mGSM</a></th>
-            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mNumGLUESub</a></th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">MSVAMP</a></th>
+            <th><a href="https://huggingface.co/datasets/juletxara/mgsm">MGSM</a></th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">MNumGLUESub</a></th>
         </tr>
     </thead>
     <tbody>
