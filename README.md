@@ -77,12 +77,18 @@ Below is the average accuracy across ten languages on three multilingual mathema
            <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
         </tr> -->
         <tr>
+            <td><a href="https://huggingface.co/Wenhao97/QAlign-MetaMathQA-7B">QAlign 7B</a></td>
+            <td style="text-align: center;">57.2</td>
+            <td style="text-align: center;">49.6</td>
+            <td style="text-align: center;">-</td>
+        </tr>
+        <tr>
             <td><a href="https://huggingface.co/Mathoctopus/Parallel_7B">MathOctopus 7B</a></td>
             <td style="text-align: center;">41.2</td>
             <td style="text-align: center;">39.5</td>
             <td style="text-align: center;">37.1</td>
         </tr>
-        <!-- <tr>
+        <!-- <tr> (ours)
             <td>+ m-RFT</td>
             <td style="text-align: center;">48.7</td>
             <td style="text-align: center;">34.4</td>
@@ -156,6 +162,12 @@ Below is the average accuracy across ten languages on three multilingual mathema
         <!-- <tr>
            <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
         </tr> -->
+                <tr>
+            <td><a href="https://huggingface.co/Wenhao97/QAlign-MetaMathQA-13B">QAlign 13B</a></td>
+            <td style="text-align: center;">62.6</td>
+            <td style="text-align: center;">57.1</td>
+            <td style="text-align: center;">-</td>
+        </tr>
         <tr>
             <td><a href="https://huggingface.co/Mathoctopus/Parallel_13B">MathOctopus 13B</a></td>
             <td style="text-align: center;">51.8</td>
