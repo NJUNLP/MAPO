@@ -257,7 +257,7 @@ We also hope that in the future, more multilingual reasoning LLMs can collaborat
   <img src="/fig/ARC.png" alt="Alt text for image 2" width="350" />
 </p>
 
-Significant improvements in the consistency of both the reasoning processes (left) and the reasoning answers (right) of LLM across various languages.
+We report PPL-based alignment score (left) and ACR (right), respectively assessing the consistency of the reasoning process and the reasoning answer. MAPO achieves significant improvements in the consistency of both the reasoning processes and the reasoning answers of LLM across various languages.
 
 
 
