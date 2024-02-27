@@ -35,12 +35,9 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
 
 
 
-# :trophy: Benchmarks
+## :trophy: Benchmarks
 
-Below is the average accuracy across ten languages on three multilingual mathematical reasoning datasets . Our method has significantly improved the multilingual reasoning capabilities of large models by a large margin, achieving the SOTA performance.
-
-
-We also hope that in the future, more multilingual reasoning LLMs can collaborate with our work to further enhance multilingual reasoning capabilities.
+Below is the average accuracy across ten languages on three multilingual mathematical reasoning datasets . Our method has significantly improved the multilingual reasoning capabilities of large models by a large margin, achieving the SOTA performance. We also hope that in the future, more multilingual reasoning LLMs can collaborate with our work to further enhance multilingual reasoning capabilities.
 
 <table>
     <thead>
@@ -261,7 +258,7 @@ We report PPL-based alignment score (left) and ACR (right), respectively assessi
 
 
 
-# :hammer_and_wrench: Training & Evaluation
+## :hammer_and_wrench: Training & Evaluation
 - Preference optimization data preparation
   - Generation: bash sampling.sh
   - Preference estimation: bash PreferenceEstimate.sh
