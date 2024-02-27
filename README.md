@@ -289,7 +289,7 @@ If you find this repository helpful, feel free to cite our paper:
 ```
 @misc{she2024mapo,
       title={MAPO: Advancing Multilingual Reasoning through Multilingual Alignment-as-Preference Optimization}, 
-      author={Shuaijie She and Shujian Huang and Wei Zou and Wenhao Zhu and Xiang Liu and Xiang Geng and Jiajun Chen},
+      author={Shuaijie She and Wei Zou and Shujian Huang and Wenhao Zhu and Xiang Liu and Xiang Geng and Jiajun Chen},
       year={2024},
       eprint={2401.06838},
       archivePrefix={arXiv},
