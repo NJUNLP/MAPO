@@ -37,8 +37,6 @@ Welcome to the repository of MAPO, our cutting-edge framework designed to revolu
 
 # :trophy: Benchmarks
 
-## Average Accuracy on Three Multilingual Reasoning Benchmarks
-
 Below is the average accuracy across ten languages on three multilingual mathematical reasoning datasets . Our method has significantly improved the multilingual reasoning capabilities of large models by a large margin, achieving the SOTA performance.
 
 
