@@ -123,6 +123,87 @@ We also hope that in the future, more multilingual reasoning LLMs can collaborat
     </tbody>
 </table>
 
+
+<table>
+    <thead>
+        <tr>
+            <th>System</th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mSVAMP</a></th>
+            <th><a href="https://huggingface.co/datasets/juletxara/mgsm">mGSM</a></th>
+            <th><a href="https://huggingface.co/datasets/Mathoctopus/MSVAMP">mNumGLUESub</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GPT-3.5-Turbo</td>
+            <td style="text-align: center;">46.6</td>
+            <td style="text-align: center;">42.2</td>
+            <td style="text-align: center;">49.4</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/TIGER-Lab/MAmmoTH-13B">MAmmoTH 13B</a></td>
+            <td style="text-align: center;">38.6</td>
+            <td style="text-align: center;">28.9</td>
+            <td style="text-align: center;">29.5</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/WizardLM/WizardMath-13B-V1.1">WizardMath 13B</a></td>
+            <td style="text-align: center;">35.7</td>
+            <td style="text-align: center;">28.3</td>
+            <td style="text-align: center;">29.0</td>
+        </tr>
+        <tr>
+            <td><a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0">MetaMath 13B</a></td>
+            <td style="text-align: center;">46.2</td>
+            <td style="text-align: center;">37.0</td>
+            <td style="text-align: center;">43.2</td>
+        </tr>
+        <!-- <tr>
+           <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
+        </tr> -->
+        <tr>
+            <td><a href="https://huggingface.co/Mathoctopus/Parallel_13B">MathOctopus 13B</a></td>
+            <td style="text-align: center;">44.3</td>
+            <td style="text-align: center;">46.0</td>
+            <td style="text-align: center;">40.3</td>
+        </tr>
+        <!-- <tr>
+            <td>+ m-RFT</td>
+            <td style="text-align: center;">48.7</td>
+            <td style="text-align: center;">34.4</td>
+            <td style="text-align: center;">45.4</td>
+        </tr> -->
+        <tr>
+            <td><strong><a href="https://huggingface.co/kevinpro/MathOctopus-MAPO-DPO-13B">+ MAPO-DPO(ours)</a>🔥</strong></td>
+            <td style="text-align: center;"><strong>60.1</strong></td>
+            <td style="text-align: center;"><strong>48.5</strong></td>
+            <td style="text-align: center;"><strong>53.8</strong></td>
+        </tr> 
+        <!-- <tr>
+           <td colspan="5" style="text-align: center;">MetaMathOctopus 7B</td>
+        </tr> -->
+        <tr>
+            <td><a href="https://huggingface.co/kevinpro/MetaMathOctopus-13B">MetaMathOctopus 13B</a></td>
+            <td style="text-align: center;">56.3</td>
+            <td style="text-align: center;">51.4</td>
+            <td style="text-align: center;">49.5</td>
+        </tr>
+        <!-- <tr>
+            <td>+ m-RFT</td>
+            <td style="text-align: center;">56.7</td>
+            <td style="text-align: center;">41.4</td>
+            <td style="text-align: center;">51.7</td>
+        </tr> -->
+        <tr>
+           <td><strong><a href="https://huggingface.co/kevinpro/MetaMathOctopus-MAPO-DPO-13B">+ MAPO-DPO(ours)</a> 👑</strong></td>
+            <td style="text-align: center;"><strong>67.0</strong></td>
+            <td style="text-align: center;"><strong>58.0</strong></td>
+            <td style="text-align: center;"><strong>59.8</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+
 <!-- |        System          | [mSVAMP](https://huggingface.co/datasets/Mathoctopus/MSVAMP)| [mGSM](https://huggingface.co/datasets/juletxara/mgsm) |  [mNumGLUESub](https://huggingface.co/datasets/Mathoctopus/MSVAMP) | Download |
 |--------------------------|:----:|:----:|:------:|:--------:|
 | ChatGPT Zero-shot |        46.6    |      42.2                 | 49.4 |   -   |
