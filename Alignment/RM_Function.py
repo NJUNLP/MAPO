@@ -39,6 +39,7 @@ def MultiLigual_Alighment_reward_fuction(tokenizer,rm_model,outputs,labels=None)
     tokenizer = rm_model[1]
     status = {}
 
+    # Penalty on Corrupted Outputs
     if check_repeated_sentences(outputs.split('### Response:')[1].strip().split("####")[0].strip()):
         status['avg-PPL'] = -1
         status['reward'] = -1

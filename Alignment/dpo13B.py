@@ -26,7 +26,7 @@ from trl import DPOTrainer
 import os
 from transformers.trainer_utils import PREFIX_CHECKPOINT_DIR
 from datasets import load_dataset, concatenate_datasets, DatasetDict
-
+Log_dir = "/mnt/data/shesj/Log/DPO/"
 class SavePeftModelCallback(TrainerCallback):
     def on_save(
         self,
@@ -247,7 +247,7 @@ if __name__ == "__main__":
         report_to=script_args.report_to,
         save_total_limit=10,
         load_best_model_at_end=True,
-        logging_dir="/mnt/data/shesj/Log/DPO/" + script_args.output_dir.split('/')[-1] + '/logs',
+        logging_dir= Log_dir + script_args.output_dir.split('/')[-1] + '/logs',
         lr_scheduler_type=script_args.lr_scheduler_type,
         warmup_steps=script_args.warmup_steps,
         optim=script_args.optimizer_type,

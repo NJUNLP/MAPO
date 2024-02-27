@@ -147,7 +147,6 @@ critic_model = AutoModelForCausalLM.from_pretrained(
 )
 critic_model = get_peft_model(critic_model, lora_config)
 critic_model = AutoModelForCausalLMWithValueHead.from_pretrained(critic_model,torch_dtype=torch.bfloat16,low_cpu_mem_usage=True,device_map={"": current_device})
-# critic_model = get_peft_model(critic_model, lora_config)
 critic_model.train()
 
 

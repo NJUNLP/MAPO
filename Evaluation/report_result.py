@@ -10,6 +10,7 @@ import json
 import re
 import re
 
+#SET here
 # Examples data
 test_setting = [
     "MetaMath-7B-V1.0-{}_genen_collect.json"
