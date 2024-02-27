@@ -155,15 +155,15 @@ We also hope that in the future, more multilingual reasoning LLMs can collaborat
         <tr>
             <td><a href="https://huggingface.co/meta-math/MetaMath-13B-V1.0">MetaMath 13B</a></td>
             <td style="text-align: center;">46.2</td>
-            <td style="text-align: center;">37.0</td>
-            <td style="text-align: center;">43.2</td>
+            <td style="text-align: center;">43.9</td>
+            <td style="text-align: center;">43.3</td>
         </tr>
         <!-- <tr>
            <td colspan="5" style="text-align: center;"> MathOctopus 7B</td>
         </tr> -->
         <tr>
             <td><a href="https://huggingface.co/Mathoctopus/Parallel_13B">MathOctopus 13B</a></td>
-            <td style="text-align: center;">44.3</td>
+            <td style="text-align: center;">51.8</td>
             <td style="text-align: center;">46.0</td>
             <td style="text-align: center;">40.3</td>
         </tr>
@@ -250,7 +250,7 @@ We also hope that in the future, more multilingual reasoning LLMs can collaborat
 
 
 
-## :trophy: Alignment Performance
+# :trophy: Alignment Performance
 
 <p float="left">
   <img src="/fig/Alignment.png" alt="Alt text for image 1" width="350" />
