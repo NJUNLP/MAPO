@@ -1,13 +1,14 @@
 
 import sys
-sys.path.append("/mnt/data/shesj/RL4CoT")
 import json
 import math
 
 import json
 from collections import Counter
 
-
+#SET HERE
+# config the generated file here
+file="../Data/numglue-mutli-lingualmeta_13B_gen.json"
 
 def check_repeated_sentences(paragraph):
     # 使用换行符分割段落为句子
@@ -26,7 +27,7 @@ def check_repeated_sentences(paragraph):
     return False
 
 
-file="/mnt/data/shesj/Data/RL4CoTData/numglue-mutli-lingualmeta_13B_gen.json"
+
 
 def preprocess(solution):
     solution =  solution.split("####")[0].strip()

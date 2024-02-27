@@ -123,7 +123,6 @@ def get_hh(args) -> Dataset:
     if len(dev_dataset) > 20000:
         dev_dataset = dev_dataset.select(range(20000))
 
-    #train_dataset = load_dataset("json", data_files=args.dataset + '-train.json', split="train").shuffle(seed=42)
     K = args.per_device_train_batch_size * 8 * args.gradient_accumulation_steps * args.max_steps * 2
     print("=============== We are selecting Top ",K, " ======================")
     K = min(K,len(train_dataset))
@@ -163,25 +162,10 @@ if __name__ == "__main__":
         torch_dtype=torch.bfloat16,
         low_cpu_mem_usage=True
     )
-    # peft_config = LoraConfig(
-    #     task_type="CAUSAL_LM",
-    #     r=16,
-    #     lora_alpha=32,
-    #     lora_dropout=0.1,
-    #     target_modules = ["q_proj","v_proj","gate_proj", "down_proj", "up_proj"],
-    # )
-    
-    # model = get_peft_model(model, peft_config)
-    # model = AutoPeftModelForCausalLM.from_pretrained(
-    #     script_args.model_name_or_path,
-    #     low_cpu_mem_usage=True,
-    #     torch_dtype=torch.bfloat16,
-    #     #load_in_4bit=True,
-    # )
+   
 
     model.config.use_cache = False
 
-    #model = AutoModelForCausalLM.from_pretrained(script_args.model_name_or_path,torch_dtype=torch.bfloat16)
 
     if script_args.ignore_bias_buffers:
         # torch distributed hack
@@ -189,11 +173,7 @@ if __name__ == "__main__":
             name for name, buffer in model.named_buffers() if buffer.dtype == torch.bool
         ]
 
-    # model_ref = AutoPeftModelForCausalLM.from_pretrained(
-    #     script_args.model_name_or_path,
-    #     low_cpu_mem_usage=True,
-    #     torch_dtype=torch.bfloat16,
-    # )
+
 
     model_ref = AutoModelForCausalLM.from_pretrained(
         script_args.model_name_or_path,
@@ -202,15 +182,7 @@ if __name__ == "__main__":
         low_cpu_mem_usage=True
     )
     model_ref.config.use_cache = False
-    # peft_config = LoraConfig(
-    #     task_type="CAUSAL_LM",
-    #     r=16,
-    #     lora_alpha=32,
-    #     lora_dropout=0.1,
-    #     target_modules = ["q_proj","v_proj","gate_proj", "down_proj", "up_proj"],
-    # )
-    
-    # model_ref = get_peft_model(model, peft_config)
+
 
     tokenizer = AutoTokenizer.from_pretrained(script_args.model_name_or_path)
     tokenizer.padding_side = "right"  # Allow batched inference

@@ -2,9 +2,14 @@
 model_name=$1
 split=$2
 
+
+# To accelerate, we will launch 8 processes on 8 GPUs simultaneously to calculate the scores. You can configure `num_proc` and `data_len = (total_data / num_proc)` according to your actual situation.
+
+#SET here
+#config the paired data path
 datapath="numglue-mutli-lingualmeta_13B_genen_collect.json"
 
-path1="/mnt/data/shesj/Data/RL4CoTData/tmp/$datapath"
+path1="../Data/tmp/$datapath"
 echo path: "$path1"
 
 if [ -d "$path1" ]; then
@@ -14,11 +19,7 @@ fi
 mkdir "$path1"
 
 num_proc=8
-#data_len=3800
-data_len=2280
 data_len=2400
-# data_len=700
-#data_len=10
 processes=()
 
 for ((i = 0; i < num_proc; i++)); do
@@ -37,4 +38,5 @@ echo "所有进程已完成"
 
 echo "Merging..."
 
-python json_merged.py --source_dir /mnt/data/shesj/Data/RL4CoTData/tmp/$datapath --target_file /mnt/data/shesj/Data/RL4CoTData/feedback_data/$datapath
+# Call json_merge to merge the results of each process
+python json_merged.py --source_dir ../Data/tmp/$datapath --target_file ../Data/feedback_data/$datapath

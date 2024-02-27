@@ -16,8 +16,9 @@ parser.add_argument('--begin_index', type=int)
 parser.add_argument('--data_length', type=int)
 parser.add_argument('--data_file', type=str)
 args = parser.parse_args()
-data_path = "/mnt/data/shesj/Data/RL4CoTData/{}".format(args.data_file)
-target_dir = "/mnt/data/shesj/Data/RL4CoTData/tmp/{}".format(args.data_file)
+
+data_path = "../Data/{}".format(args.data_file)
+target_dir = "../Data/tmp/{}".format(args.data_file)
 target_path = target_dir + "/{proc}.json".format(proc = args.begin_index)
 
 
@@ -26,6 +27,9 @@ with open(data_path, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, pipeline
+
+#Set here
+#config the NLLB model here
 rm_model_base = AutoModelForSeq2SeqLM.from_pretrained("/mnt/data/shesj/PLM/nllb-200-distilled-600M",device_map='auto')
 rm_model_base = rm_model_base.eval()
 rm_tokenizer = AutoTokenizer.from_pretrained("/mnt/data/shesj/PLM/nllb-200-distilled-600M")

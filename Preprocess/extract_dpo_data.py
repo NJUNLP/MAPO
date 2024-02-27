@@ -1,6 +1,9 @@
 import json
 import re
 
+#SET HERE
+target = "numglue-mutli-lingualmeta_13B_genen_collect_reset"
+
 def extract_last_num(text: str) -> float:
     text = re.sub(r"(\d),(\d)", "\g<1>\g<2>", text)  # 处理形如 123,456
     res = re.findall(r"(\d+(\.\d+)?)", text)  # 匹配 123456.789
@@ -10,9 +13,7 @@ def extract_last_num(text: str) -> float:
     else:
         return 0.0
 
-target = "numglue-mutli-lingualmeta_13B_genen_collect_reset"
-
-f = open("/mnt/data/shesj/Data/RL4CoTData/feedback_data/{}.json".format(target))
+f = open("../Data/feedback_data/{}.json".format(target))
 data = json.load(f)
 
 def process(input_str):
@@ -61,7 +62,7 @@ for i in english_instruction2data:
     
 print(len(train_data))
 print(len(dev_data))
-f = open("/mnt/data/shesj/Data/RL4CoTData/rm_data/{}-onlycorrect-train.json".format(target),'w')
+f = open("../Data/preference_data/{}-train.json".format(target),'w')
 json.dump(train_data,f,indent=2,ensure_ascii=False)
-f = open("/mnt/data/shesj/Data/RL4CoTData/rm_data/{}-onlycorrect-dev.json".format(target),'w')
+f = open("../Data/preference_data/{}-dev.json".format(target),'w')
 json.dump(dev_data,f,indent=2,ensure_ascii=False)
