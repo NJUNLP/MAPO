@@ -122,7 +122,7 @@ Below is the average accuracy across ten languages on three multilingual mathema
             <td style="text-align: center;"><strong>52.9</strong></td>
         </tr>
                 <tr>
-            <td><a href="https://huggingface.co/kevinpro/MetaMathOctopus-7B">MistralMathOctopus 7B</a></td>
+            <td><a href="https://huggingface.co/kevinpro/MistralMathOctopus-7B">MistralMathOctopus 7B</a></td>
             <td style="text-align: center;">59.0</td>
             <td style="text-align: center;">58.0</td>
             <td style="text-align: center;">56.8</td>
@@ -134,12 +134,11 @@ Below is the average accuracy across ten languages on three multilingual mathema
             <td style="text-align: center;">51.7</td>
         </tr> -->
         <tr>
-           <td><strong><a href="https://huggingface.co/kevinpro/MetaMathOctopus-MAPO-DPO-7B">+ MAPO-DPO(ours)</a> 👑</strong></td>
+           <td><strong><a href="https://huggingface.co/kevinpro/MistralMathOctopus-MAPO-DPO-7B">+ MAPO-DPO(ours)</a> 👑</strong></td>
             <td style="text-align: center;"><strong>74.6</strong></td>
             <td style="text-align: center;"><strong>67.3</strong></td>
             <td style="text-align: center;"><strong>70.0</strong></td>
         </tr>
-        
     </tbody>
 </table>
 
