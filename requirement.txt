@@ -30,7 +30,6 @@ cycler==0.11.0
 datasets==2.15.0
 deepspeed==0.12.4
 # Editable install with no version control (deepspeed-chat==0.1)
--e /mnt/data/shesj/DeepSpeed-Chat
 dill==0.3.6
 distlib==0.3.8
 docker-pycreds==0.4.0
@@ -40,7 +39,7 @@ exceptiongroup==1.1.1
 fastapi==0.98.0
 ffmpy==0.3.0
 filelock==3.12.2
-flash-attn @ file:///mnt/data/shesj/pip_pack/flash_attn-2.3.4%2Bcu122torch2.1cxx11abiFALSE-cp310-cp310-linux_x86_64.whl#sha256=a4f74d7c46a5b6c86d3f7539b07d11a76e7bfe8089cbc1de8ee79f0cf984bb13
+flash-attn
 Flask==3.0.0
 fonttools==4.40.0
 Fraction==2.2.0
