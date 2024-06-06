@@ -1,0 +1,5 @@
+{
+    "description": "",
+    "prompt_input": "{instruction}",
+    "prompt_no_input": "{instruction}"
+}

@@ -5,9 +5,6 @@ import torch.nn as nn
 import json
 from collections import Counter
 
-sys.path.append("/mnt/data/shesj/RL4CoT")
-from utils.generatePrompt import Prompter,get_prompter
-
 loss_fn = nn.CrossEntropyLoss(reduction='none')
 
 def check_repeated_sentences(paragraph):

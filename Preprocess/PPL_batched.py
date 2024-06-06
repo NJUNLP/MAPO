@@ -6,7 +6,6 @@ from tqdm import tqdm
 from random import sample
 import sys
 sys.path.append("/mnt/data/shesj/RL4CoT")
-from utils.generatePrompt import get_prompter,parse_answer,parse_reasoning,get_split
 import math
 import argparse
 import torch.nn as nn

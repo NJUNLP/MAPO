@@ -16,8 +16,8 @@ from trl import AutoModelForCausalLMWithValueHead, PPOConfig, MyPPOTrainer
 from trl.core import LengthSampler
 from transformers.trainer import TRAINING_ARGS_NAME, WEIGHTS_NAME
 from trl import PreTrainedModelWrapper
-from utils.generatePrompt import Prompter,get_prompter
-from utils.load_model import load_casual_value_head_model
+from generatePrompt import get_prompter
+from load_model import load_casual_value_head_model
 from accelerate import Accelerator
 from RM_Function import reward_function_market
 VALUE_HEAD_FILE_NAME = "value_head.bin"
