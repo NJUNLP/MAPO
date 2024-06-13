@@ -12,6 +12,8 @@ from tqdm import tqdm
 from transformers import BitsAndBytesConfig, HfArgumentParser,AutoModelForCausalLM
 from peft import PeftModel, PeftConfig,get_peft_model
 from transformers import AutoModelForSequenceClassification
+
+# Recommended to switch to the official trl implementation of the PPO trainer.
 from trl import AutoModelForCausalLMWithValueHead, PPOConfig, MyPPOTrainer
 from trl.core import LengthSampler
 from transformers.trainer import TRAINING_ARGS_NAME, WEIGHTS_NAME
@@ -149,7 +151,7 @@ critic_model = get_peft_model(critic_model, lora_config)
 critic_model = AutoModelForCausalLMWithValueHead.from_pretrained(critic_model,torch_dtype=torch.bfloat16,low_cpu_mem_usage=True,device_map={"": current_device})
 critic_model.train()
 
-
+# Recommended to switch to the official trl implementation of the PPO trainer.
 from rlhf_model import RLHFModel
 model = RLHFModel(actor_model,critic_model)
 
@@ -217,6 +219,7 @@ optimizer = AdamW([
 
 lr_scheduler = get_linear_schedule_with_warmup(optimizer = optimizer,num_warmup_steps = training_details['num_warmup_steps'],num_training_steps=training_details['num_training_steps'])
 
+# Recommended to switch to the official trl implementation of the PPO trainer.
 ppo_trainer = MyPPOTrainer(
     config,
     model,
